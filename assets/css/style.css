@@ -1,0 +1,344 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sections {
+    margin: 2% 5% 2% 5%;
+    padding: 30px 30px 30px 30px;
+    display: flex;
+    flex: wrap;
+    
+}
+
+.headers {
+    padding: 0 0 2% 0;
+    font-size: 32px;
+}
+
+/* Header/Nav */
+.title {
+    font-size: 45px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header h1 {
+    
+    font-weight: bold;
+    font-size: 35px;
+    margin: 0;
+}
+
+header li {
+
+    padding: 10px 20px 10px 20px;
+}
+
+header a {
+
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul {
+
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    font-size: 20px;
+}
+
+#red {
+    
+    padding: 3px 7px;
+    border-radius: 25px;
+    border: 2px solid red;
+}
+
+#blue {
+    
+    padding: 3px 7px;
+    border-radius: 25px;
+    border: 2px solid blue;
+}
+
+
+#green {
+    
+    padding: 3px 7px;
+    border-radius: 25px;
+    border: 2px solid green;
+}
+
+/* END */
+
+/* Hero */
+.hero {
+    display: flex;
+}
+
+.hero img {
+    width: 100%;
+    
+}
+
+/* About Me */
+
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-me-text {
+    display: flex; 
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.border-text {
+    border-radius: 25px;
+    border: 2px solid red;
+    font-size: 18px;
+}
+
+.me {
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.me-img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.me img {
+    width: 30%;
+    height: auto;
+    padding: 0 10px 0 0;
+    
+}
+
+.me p {
+    padding: 10px;
+
+}
+
+#about-me {
+
+    border-radius: 25px;
+    border: 5px solid red;
+}
+/* My Work */
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.my-work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.my-work img {
+
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0 0 2% 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#work {
+    border-radius: 25px;
+    border: 5px solid blue;
+}
+
+.pictures:hover {
+    
+    border: 5px solid yellow;
+}
+
+.overlay {
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: yellow;
+    padding: 5px;
+    width: 100%;
+}
+
+.overlay h3 , .overlay p{
+    color: black;
+    font-size: 20px;
+}
+
+.work-small {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;   
+}
+
+.container {
+    width: 23.5vw;
+    height: auto;
+    padding: 0 20px 0 20px;
+}
+
+
+
+/* END */
+
+/* Contact */
+
+#contact {
+
+    border-radius: 25px;
+    border: 5px solid green;
+}
+
+.contact {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact h4 {
+
+    font-weight: lighter;
+    font-style: italic;
+}
+
+/* Footer */
+
+footer h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 15px 0;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 70%;
+}
+
+@media screen and (max-width: 980px) {
+
+    .work-small {
+        flex-direction: column;
+    }
+    
+    .container {
+        width: 100%;
+        height: auto;
+        padding: 0 0 0 0;
+    }
+
+
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+    }
+   
+    .work-small {
+        flex-direction: column;
+    }
+    
+    .container {
+        width: 100%;
+        height: auto;
+        padding: 0 0 0 0;
+    }
+
+    .me {
+        flex-wrap: wrap;
+    }
+
+    .me img {
+        flex: 1;
+        margin: 0 0 10px 0;
+     }
+    
+}
+
+@media screen and (max-width: 575px) {
+    
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+   
+    header nav ul {
+        font-size: 18px;
+    }
+
+    header li {
+        padding: 20px 4px 10px 4px;
+    }
+
+    .work{
+        justify-content: center;
+    }
+
+    .work-small {
+        flex-direction: column;
+    }
+    
+    .container {
+        width: 100%;
+        height: auto;
+        padding: 0 0 0 0;
+    }
+
+    .me {
+        flex-wrap: wrap;
+    }
+
+    .me img {
+        flex: 1;
+        margin-bottom: 0 0 10px 0;
+     }
+
+     .contact {
+         flex-direction: column;
+
+     }
+
+     .contact h4 {
+         padding: 5px 0 0 0;
+     }
+    
+
+}
